@@ -1,0 +1,14 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<p>Details for {{ products.name }}</p>
+<h5>Description</h5>
+<p>Details for {{ products.description}}</p>
+<h5>Ages</h5>
+<p>{{ products.age_range}}</p>
+<h5>Price</h5>
+<p>{{ products.price|floatformat:2}}</p>
+
+<a class="btn btn-primary" href="{% url 'index' %}">Home</a>
+
+{% endblock %} 

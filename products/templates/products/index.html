@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<table class="table">
+  <thead>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Age</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+{% for product in products %}
+    <tr>
+        <td><a href="{% url 'show' product.id %}">{{ product.name }}</a>
+        <td>{{ product.description|truncatewords:5 }}
+        <td>{{ product.age_range }}
+        <td class="right">{{ product.price|floatformat:2 }}
+        </td>
+{% endfor %}
+    </tbody>
+</table>
+{% endblock %} 

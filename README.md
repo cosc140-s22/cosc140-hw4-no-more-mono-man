@@ -2,9 +2,9 @@
 
 ## Homework feedback
 
- * How long did you spend on this homework?
+ * How long did you spend on this homework? 1 hour
 
- * What did you think about it?  What was good?  What could be improved?
+ * What did you think about it?  What was good?  What could be improved? I liked it!
 
 ## Feedback
 

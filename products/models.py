@@ -9,3 +9,11 @@ class Product(models.Model):
 
     def __str__(self):
         return f"Product {self.name}, price {self.price:.02f}"
+
+    def age_range(self):
+      if self.maximum_age_appropriate == -1:
+        return "Ages " + str(self.minimum_age_appropriate) + " and up"
+      elif self.maximum_age_appropriate == self.minimum_age_appropriate:
+        return "Age " + str(self.maximum_age_appropriate)
+      else:
+        return "Ages " + str(self.minimum_age_appropriate) + " to " + str(self.maximum_age_appropriate)
